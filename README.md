@@ -1,46 +1,41 @@
-# Getting Started with Create React App and Redux
+# Counting Calculator
+By Stella Marie
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+A calculator web app for counting by increments.
 
-## Available Scripts
+## Technologies Used
+- React
+- Redux Toolkit
+- CSS
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+The counting calculator is based off of the tutorial from [Redux Toolkit Quick Start Guide](https://redux-toolkit.js.org/tutorials/quick-start), which demonstrates setting up a counter react app with redux toolkit. While Redux Toolkit offers a template project for seeing how the various parts of redux, such as slices, reducers, actions, and thunks, work, this project was developed from following along with the tutorial, and then diverged to include number keys and modification of the count and difference.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+If you would like to install the Redux Toolkit template project, use the package manager to create a react app with the redux template.
 
-### `npm test`
+```bash
+npx create-react-app app-name --template redux
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+When you first open the web app, the count will be 0 and the difference will be 1. Pressing + and - will increment and decrement the count by the difference, but the count will stop at 0, meaning no negative integers.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Changing the Count
+Click on the count display, then either press the number keys or use the + and - keys. Unless the count is 0, numbers will be appended, incremented or decremented by the difference. Press **Reset Count** to set the count to 0. Press **Previous Count** to undo changes made.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Changing the Difference
+Click on the difference display, then either press the number keys or use the + and - keys. Since the difference defaults to 1, the **Zero Difference** button was added specifically to set the difference to 0, allowing the first digit to be set instead of being 1. However, incrementing and decrementing can also be used in adjusting the default difference to another single digit to start with.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Known Bugs
 
-### `npm run eject`
+- Zero Difference button text cut off by button height
+- Button group for previous, reset and zero are not evenly spaced
+- No indicator for selected display
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[MIT](https://choosealicense.com/licenses/mit/)
