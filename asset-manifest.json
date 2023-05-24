@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/counting-calculator/static/css/main.3bf1ee4e.css",
+    "main.js": "/counting-calculator/static/js/main.52a1380b.js",
+    "index.html": "/counting-calculator/index.html",
+    "main.3bf1ee4e.css.map": "/counting-calculator/static/css/main.3bf1ee4e.css.map",
+    "main.52a1380b.js.map": "/counting-calculator/static/js/main.52a1380b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3bf1ee4e.css",
+    "static/js/main.52a1380b.js"
+  ]
+}
